@@ -3,23 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>技术分享与 Pandora 展望</title>
     <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
-    <link
-      rel="stylesheet"
-      href="/node_modules/reveal.js/dist/theme/black.css"
-    />
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/sky.css" />
+    <style>
+      .section p {
+        text-align: left;
+        font-size: 24px;
+        margin-top: 50px;
+        padding-left: 200px;
+      }
+      .section-center p {
+        text-align: center;
+        padding-left: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section>
+          技术分享 && Pandora 展望
+          <aside class="notes">
+            很开心还能有机会给大家做一次技术分享，是我在这个团队的第一次也可能是最后一次了。
+            这次分享我首先介绍一下我近期对 Web
+            技术的一些认识和想法，然后讲讲我对未来 Pandora
+            产品的一些思考吧，大家择优选择吧，希望对未来大家技术选型和规划有一定的帮助。
+          </aside>
+        </section>
+        <section>现代 Web ？</section>
+        <section>
+          <section class="section">
+            <div class="title">传统 Web</div>
+            <p>HTML、CSS、JavaScript 三剑客</p>
+            <p>PHP 世界上最好的语言</p>
+            <p>Node 发展出新的分工：「前端』「后端』「全栈』</p>
+            <aside class="notes">
+              首先先讲讲web的发展史。最早的web诞生是内容的载体，HTML最为超文本传输语言，承载着几乎所有的内容资源。那个时候的前端叫网页设计师。
+              随着后面开始有动态生成页面的需求，PHP
+              应运而生，承载了这个时候的Web需求。
+              Node的诞生和发展，出现了真正的前端、后端和全栈的概念，前端工程化也自成体系，出现了各种MVC框架，和后端的分工界限也开始明确。而全栈则是任务开发者可以兼得前后端的所有技术要求。
+              我们团队的前端后端在这个阶段，前端开发者负责开发所有产品或程序中的前端部分，后端开发者负责所有后端部分，由于不使用Node，目前没有全栈的需求。
+            </aside>
+          </section>
+          <section class="section">
+            <div class="title">现代 Web</div>
+            <p>面向人类: 应用开发者</p>
+            <p>面向数据: 大数据开发者</p>
+            <p>面向机器: 分布式基础设施开发者</p>
+            <aside class="notes">
+              随着移动互联网的诞生，web不单单是内容的提供者，更多的成了服务的提供者。
+              爆炸式的发展对性能和用户体验的要求逐步提高。
+              在客户端层，服务端渲染成了刚需，这部分代码也存在于客户端代码中，是应用的一种部署方式。
+              在服务器端，从物理机的部署、到云服务、到容器，对于分布式存储和计算的需求也逐步增加。
+              服务端也开始出现分层，这里的开发者更多的是面向服务器架构和数据层面的开发。而应用接口的提供者只是服务端服务的薄薄一层。
+              这种趋势下出现了新的分工模式：面向人类、面向数据、和面向机器的开发者。
+              应用的开发者使用的技术就是现代web开发技术
+            </aside>
+          </section>
+        </section>
+        <section class="section">
+          <div>现代 Web 技术的特征</div>
+          <p>以客户端为主体: 服务器端变薄，大量需要依赖服务已成熟并API化</p>
+          <p>不只有客户端: 服务端渲染 + 微服务</p>
+          <p>不只有浏览器: 超级 APP</p>
+          <p>js everywhere: 客户端的各种需求都可以使用JS来承载和实现</p>
+          <aside class="notes">
+            不像传统 Web 开发以服务器端为主体、前端是后端 Web
+            框架中的一部分，现代 Web 开发是以客户端为主体，而后端部分比如
+            SSR、BFF、Serverless 可以成为前端框架中的一部分。 因此现代 Web
+            开发中不止有客户端，在客户端部分，也不止有浏览器，而是面向更广泛的具备
+            Web Runtime 的平台。 第四个特征是以 JS 为中心，几乎会尽可能用 JS
+            解决一切问题
+          </aside>
+        </section>
+        <section class="section">
+          <div>JS 开发者分裂</div>
+          <p>用户体验 UI设计 动画</p>
+          <p>JS为中心，前后端技术，工程化</p>
+          <aside class="notes">
+            JS的广泛使用，使得每一个开发者已经不能完全掌握所有的相关技能，就像一个人不能吃完超市所有的食物一样。所以JS开发者层面上出现了分裂。
+            一部分开发者注重于用户体验，UI设计层，一部分开发者注重于客户端工程化。前者大部分时间在进行业务的开发，后者则是所谓的基础架构团队做的事情。
+          </aside>
+        </section>
+        <section>相关技术 ？</section>
+        <section>Pandora 展望</section>
+        <section>
+          <div>应用平台接入微前端</div>
+        </section>
+        <section>
+          <div>微生成器</div>
+        </section>
+        <section class="section section-center">
+          <div class="title">数据采样</div>
+          <p>应用平台API方式</p>
+          <p>webworker</p>
+          <p>BFF</p>
+        </section>
+        <section>
+          <div>增强UI的方式支持用户自定义，可考虑编辑器接入</div>
+        </section>
+        <section class="section section-center">
+          <div class="title">Sass</div>
+          <p>SSR</p>
+          <p>BFF</p>
+        </section>
       </div>
     </div>
     <script src="/node_modules/reveal.js/dist/reveal.js"></script>
     <script>
-      Reveal.initialize();
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        overview: true,
+        // showNotes: "separate-page",
+      });
     </script>
   </body>
 </html>
